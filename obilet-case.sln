@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBilet.Presentation", "oBilet.Presentation\oBilet.Presentation.csproj", "{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBilet.Core", "oBilet.Domain\oBilet.Core.csproj", "{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBilet.Infrastructure", "oBilet.Infrastructure\oBilet.Infrastructure.csproj", "{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4DD64967-9D84-4A2A-9444-6E6F95967E36}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0272C8FB-C5B0-46F5-8E9E-B08699E25E61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oBilet.Application", "oBilet.Application\oBilet.Application.csproj", "{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A149CE3-912F-476D-AF1C-A8EAFBA6BDEE} = {4DD64967-9D84-4A2A-9444-6E6F95967E36}
+		{1C44C26B-DD2D-4E79-9133-5B3953DC6EB6} = {4DD64967-9D84-4A2A-9444-6E6F95967E36}
+		{EBDFC5F9-2C25-4AFB-9C8C-8DC0760ACA11} = {4DD64967-9D84-4A2A-9444-6E6F95967E36}
+		{52FE3920-8EB3-45A7-9040-BB1E6F2DF9B2} = {4DD64967-9D84-4A2A-9444-6E6F95967E36}
+	EndGlobalSection
+EndGlobal

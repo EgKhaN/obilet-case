@@ -1,0 +1,63 @@
+﻿@using System.Globalization
+@model List<oBilet.Application.DTOs.Journey.JourneyResponseData>
+@{
+
+    ViewBag.Title = "FindJourney";
+    oBilet.Application.DTOs.Journey.JourneyResponseData? firstData = Model.FirstOrDefault();
+    DateTime? departureDate = firstData?.Journey?.Departure?.Date;
+    string? departureMonthName = departureDate?.ToString("MMMM", new CultureInfo("tr-TR"));
+    string? departureDayName = departureDate?.ToString("dddd", new CultureInfo("tr-TR"));
+}
+
+<div class="p-3 bg-primary y-0 font-weight-bold text-white row">
+    <div class= "col-9">
+            <a href="~/home/" class="btn text-white"><i class="bi bi-arrow-left-circle-fill"></i></a>
+   
+         <div class="d-inline-block">
+            @firstData?.OriginLocation - @Model.FirstOrDefault()?.DestinationLocation
+            <br />
+            @departureDate?.Day @departureMonthName @departureDayName
+        </div>
+         </div>
+       
+   
+</div>
+
+@foreach (var item in Model)
+{
+
+    <div class="card mt-3">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-9 table-borderless">
+                    <table class="table table-sm" style="width:50% !important;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="width: 30% !important">Kalkış</th>
+                                <th scope="col" style="width: 10% !important"></th>
+                                <th scope="col" style="width: 30% !important">Varış</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>@item.Journey?.Departure?.ToString("HH:mm")</th>
+                                <td><i class="bi bi-arrow-right"></i></td>
+                                <td>@item.Journey?.Arrival?.ToString("HH:mm")</td>
+                            </tr>
+                            <tr>
+                                <th>@item.Journey?.Origin</th>
+                                <td><i class="bi bi-arrow-right"></i></td>
+                                <td>@item.Journey?.Destination</td>
+                            </tr>
+                            </tbody>
+                            </table>
+
+                </div>
+                <div class="col-3 float-right">
+                    <small class="btn btn-danger" type="button" name="name">@item.Journey?.OriginalPrice.ToString("0.00") TL</small>
+
+                </div>
+            </div>
+        </div>
+    </div>
+}
