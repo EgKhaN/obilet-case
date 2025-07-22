@@ -14,12 +14,10 @@ namespace oBilet.Presentation.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        private readonly IHttpClientFactory _httpClientFactory;
         private readonly IOBiletService _obiletService;
 
-        public HomeController(ILogger<HomeController> logger, IHttpClientFactory httpClientFactory, IOBiletService oBiletService)
+        public HomeController(ILogger<HomeController> logger, IOBiletService oBiletService)
         {
-            _httpClientFactory = httpClientFactory; 
             _logger = logger;
             _obiletService = oBiletService;
         }

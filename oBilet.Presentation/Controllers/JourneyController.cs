@@ -15,12 +15,10 @@ namespace oBilet.Presentation.Controllers
     {
         private readonly ILogger<JourneyController> _logger;
 
-        private readonly IHttpClientFactory _httpClientFactory;
         private readonly IOBiletService _obiletService;
 
-        public JourneyController(ILogger<JourneyController> logger, IHttpClientFactory httpClientFactory, IOBiletService oBiletService)
+        public JourneyController(ILogger<JourneyController> logger, IOBiletService oBiletService)
         {
-            _httpClientFactory = httpClientFactory; 
             _logger = logger;
             _obiletService = oBiletService;
         }
